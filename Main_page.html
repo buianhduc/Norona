@@ -1,18 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vn">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
     <link rel="stylesheet" href="Main_page.css">
     <link rel="stylesheet" href="checkbox.css">
+    <script type="text/javascript" src="database.json"></script>
     <title>Norona</title>
 </head>
 
 <body>
-
+    
     <div id="taskbar">
         <div id="buttons">
             <img src="SVG images/menu.svg" alt="" class="button" onclick="window.location.href ='Main_page.html'">
@@ -29,7 +31,7 @@
         </div>
     </div>
     <div id="category-options">
-        <div>
+        <div>LCL
             <div id="masks">
                 <h1>Khẩu trang</h1>
                 <div class="box">
@@ -108,7 +110,7 @@
                 </div>
             </div>
             <div id="hyperlinks">
-                <div>
+                <div id="hypers">
                     <img id="WHO" class="links" src="SVG images/WHO.png" onclick="window.open(
                         'https://www.who.int/',
                         '_blank'
@@ -211,17 +213,17 @@
                 </div>
             </div>
         </div>
-
+    <script src="search_bar.js"></script>
     <script src="Main_page.js"></script>
     <!-- The core Firebase JS SDK is always required and must be listed first -->
-    <script src="/__/firebase/7.12.0/firebase-app.js"></script>
+    <!-- <script src="/__/firebase/7.12.0/firebase-app.js"></script> -->
 
     <!-- TODO: Add SDKs for Firebase products that you want to use
      https://firebase.google.com/docs/web/setup#available-libraries -->
-    <script src="/__/firebase/7.12.0/firebase-analytics.js"></script>
+    <!-- <script src="/__/firebase/7.12.0/firebase-analytics.js"></script> -->
 
     <!-- Initialize Firebase -->
-    <script src="/__/firebase/init.js"></script>
+    <!-- <script src="/__/firebase/init.js"></script> -->
 </body>
 
 </html>

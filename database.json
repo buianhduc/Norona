@@ -1,4 +1,5 @@
-[
+{
+    [
     {
         "name" : "Khẩu trang cho trẻ em",
         "prize": "10000",
@@ -6,3 +7,4 @@
         "picture" : "https://babyfood.com.vn/data/Upload/images/khau-trang-cho-be-bmc-nhat-ban-tui-mau-xanh-set-7.JPG"
     }
 ]
+}
