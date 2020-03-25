@@ -1,5 +1,5 @@
 var list;
-fetch("./database.json").then(function(response){
+fetch("https://raw.githubusercontent.com/buianhduc/Norona/master/database.json").then(function(response){
     return response.json();
 }).then(function (obj){
     list=obj;
@@ -23,8 +23,7 @@ document.getElementById('input_box').onkeypress = function(e){
             ]
           };
           let fuse = new Fuse(list, options); // "list" is the item array
-        document
-          let result = fuse.search("");
+          let result = fuse.search(document.getElementById('input_box').value);
           console.log(result);
       return false;
     }
