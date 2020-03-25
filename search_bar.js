@@ -1,4 +1,4 @@
-fetch("./database.json")
+fetch("https://raw.githubusercontent.com/buianhduc/Norona/master/database.json")
   .then(response => response.json())
   .then(json => console.log(json));
 console.log("jdjsndijw");
