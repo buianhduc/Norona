@@ -4,7 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
     <link rel="stylesheet" href="Main_page.css">
+    <script src="Main_page_style.js"></script>
     <title>Norona</title>
 </head>
 
@@ -12,136 +15,163 @@
 
     <div id="taskbar">
         <div id="buttons">
-            <button id="menu" class="button">
-                <img src="Media/MENU.png" alt="" class="image_btn">
-            </button>
-            <div id="Category" class="button">
-                <img src="Media/Category.png" alt="" class="image_btn">
-            </div>
-            <div id="Chosen_item" class="button">
-                <img src="Media/Chosen Items.png" alt="" class="image_btn">
-            </div>
+            <img src="SVG images/menu.svg" alt="" class="button">
+            <img src="SVG images/Category.svg" alt="" class="button">
+            <img src="SVG images/Chosen items.svg" alt="" class="button">
         </div>
         <div id="finder">
+            <img src="Media/Find icon.png" alt="" class="button" style="margin-left: 1vw;">
             <input type="text" id="input_box">
-            <button id="search_icon" class="button">
-                <img src="Media/Find icon.png" alt="">
-            </button>
         </div>
         <div id="avatar">
-            <!-- <div id="ava_image"><img src="Media/Avatar.png" alt=""></div>
-            <div id="welcome_statement">Good morning, Sir</div> -->
+            <img src="Media/Avatar.png" alt="" id="ava_img">
+            <div id="welcome_statement">Good morning, Sir</div>
         </div>
     </div>
-    <div id="sidebar">
-        <div>
-            <div id="infected">
-                <div class="titles">Số ca bị nhiễm</div>
-                <div class="numbers">382,814</div>
-            </div>
-            <div id="death">
-                <div class="titles">Ca chết</div>
-                <div class="numbers">16,578</div>
-            </div>
-            <div id="Cured">
-                <div class="titles">Ca hồi phục</div>
-                <div class="numbers">102,522</div>
-            </div>
-        </div>
-        <div id="hyperlinks">
-            <div>
-                <div id="WHO"></div>
-                <div id="Health_ministry"></div>
-                <div id="CDC"></div>
-            </div>
+    <div id="category-options">
+        <ul>
+            <li>
+                <span>Khẩu trang</span>
+                <ul>
+                    <li><input type="checkbox"><span>Trẻ em</span></li>
+                    <li><input type="checkbox"><span>Người Lớn</span></li>
+                    <li><input type="checkbox"><span>Mọi lứa tuổi</span></li>
+                    <li><input type="checkbox"><span>Phòng độc</span></li>
+                    <li><input type="checkbox"><span>N95</span></li>
+                </ul>
+            </li>
+            <li>
+                <span>Nước rửa tay khô</span>
+                <ul>
+                    <li><input type="checkbox"><span>Nhỏ</span></li>
+                    <li><input type="checkbox"><span>Vừa</span></li>
+                    <li><input type="checkbox"><span>Lớn</span></li>
+                </ul>
+            </li>
 
-            <div>
-                Đường link tham khảo
+            <li>
+                <span>Nước rửa tay thường</span>
+                <ul>
+                    <li><input type="checkbox"><span>Nhỏ</span></li>
+                    <li><input type="checkbox"><span>Vừa</span></li>
+                    <li><input type="checkbox"><span>Lớn</span></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <div id="main">
+        <div id="sidebar">
+            <div id="information-container">
+                <div id="infected">
+                    <div class="titles">Số ca bị nhiễm</div>
+                    <div class="numbers">382,814</div>
+                </div>
+                <div id="death">
+                    <div class="titles">Ca chết</div>
+                    <div class="numbers">16,578</div>
+                </div>
+                <div id="cured">
+                    <div class="titles">Ca hồi phục</div>
+                    <div class="numbers">102,522</div>
+                </div>
+            </div>
+            <div id="hyperlinks">
+                <div>
+                    <img id="WHO" class="links" src="SVG images/WHO.png">
+                    <img id="Health_ministry" src="SVG images/marketingyte.com - logo bo y te viet nam PNG.png"
+                        class="links">
+                    <img id="CDC" src="SVG images/CDC.png" class="links">
+                </div>
+
+                <div>
+                    Đường link tham khảo
+                </div>
+            </div>
+        </div>
+        <div id="items" class="grid">
+            <div class="item">
+                <div class="image"></div>
+                <div class="Description">
+                    <div class="name"></div>
+                    <div class="price"></div>
+                    <div class="des"></div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="image"></div>
+                <div class="Description">
+                    <div class="name"></div>
+                    <div class="price"></div>
+                    <div class="des"></div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="image"></div>
+                <div class="Description">
+                    <div class="name"></div>
+                    <div class="price"></div>
+                    <div class="des"></div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="image"></div>
+                <div class="Description">
+                    <div class="name"></div>
+                    <div class="price"></div>
+                    <div class="des"></div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="image"></div>
+                <div class="Description">
+                    <div class="name"></div>
+                    <div class="price"></div>
+                    <div class="des"></div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="image"></div>
+                <div class="Description">
+                    <div class="name"></div>
+                    <div class="price"></div>
+                    <div class="des"></div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="image"></div>
+                <div class="Description">
+                    <div class="name"></div>
+                    <div class="price"></div>
+                    <div class="des"></div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="image"></div>
+                <div class="Description">
+                    <div class="name"></div>
+                    <div class="price"></div>
+                    <div class="des"></div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="image"></div>
+                <div class="Description">
+                    <div class="name"></div>
+                    <div class="price"></div>
+                    <div class="des"></div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="image"></div>
+                <div class="Description">
+                    <div class="name"></div>
+                    <div class="price"></div>
+                    <div class="des"></div>
+                </div>
             </div>
         </div>
     </div>
-    <div id="items">
-        <div class="item">
-            <div class="image"></div>
-            <div class="Description">
-                <div class="name"></div>
-                <div class="price"></div>
-                <div class="des"></div>
-            </div>
-        </div>
-        <div class="item">
-            <div class="image"></div>
-            <div class="Description">
-                <div class="name"></div>
-                <div class="price"></div>
-                <div class="des"></div>
-            </div>
-        </div>
-        <div class="item">
-            <div class="image"></div>
-            <div class="Description">
-                <div class="name"></div>
-                <div class="price"></div>
-                <div class="des"></div>
-            </div>
-        </div>
-        <div class="item">
-            <div class="image"></div>
-            <div class="Description">
-                <div class="name"></div>
-                <div class="price"></div>
-                <div class="des"></div>
-            </div>
-        </div>
-        <div class="item">
-            <div class="image"></div>
-            <div class="Description">
-                <div class="name"></div>
-                <div class="price"></div>
-                <div class="des"></div>
-            </div>
-        </div>
-        <div class="item">
-            <div class="image"></div>
-            <div class="Description">
-                <div class="name"></div>
-                <div class="price"></div>
-                <div class="des"></div>
-            </div>
-        </div>
-        <div class="item">
-            <div class="image"></div>
-            <div class="Description">
-                <div class="name"></div>
-                <div class="price"></div>
-                <div class="des"></div>
-            </div>
-        </div>
-        <div class="item">
-            <div class="image"></div>
-            <div class="Description">
-                <div class="name"></div>
-                <div class="price"></div>
-                <div class="des"></div>
-            </div>
-        </div>
-        <div class="item">
-            <div class="image"></div>
-            <div class="Description">
-                <div class="name"></div>
-                <div class="price"></div>
-                <div class="des"></div>
-            </div>
-        </div>
-        <div class="item">
-            <div class="image"></div>
-            <div class="Description">
-                <div class="name"></div>
-                <div class="price"></div>
-                <div class="des"></div>
-            </div>
-        </div>
-    </div>
+
     <script src="Main_page.js"></script>
     <!-- The core Firebase JS SDK is always required and must be listed first -->
     <script src="/__/firebase/7.12.0/firebase-app.js"></script>

@@ -1,17 +1,93 @@
+@import url('https://fonts.googleapis.com/css?family=Baloo+Thambi+2&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
 *{
     text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
 }
 html, body{
-    background-color: rgb(9,75,111);
+    background-color: #454B6F;
     overflow-x: auto;
-    overflow-y: hidden;
+    overflow-y: auto;
+    width: 100%;
+    height: 100%;
+    font-family: 'Open Sans', sans-serif;
+
 }
-.button{
-    background-image: linear-gradient(-43deg, #3B4269 0%, #474E7D 100%);
-    box-shadow: -3px -3px 6px 0 #545D96, 3px 3px 6px 0 #303554;
-    border-radius: 17px;
-    width: 5vw;
-    height: 5vw;
+#taskbar{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#buttons{
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    align-content: space-between;
+    justify-content: space-between;
+    left: 0;
+}
+#finder{
+    width: fit-content;
+    height: 200%;
+    display: flex;
+    flex-flow: row nowrap;
+    align-content: center;
+    text-align: center;
+    align-items: center;
+    
+    border-radius: 50%;
+    left: 50%;
+    top: 0%;
+    width: 50vw;
+    height: inherit;
+    background-image: linear-gradient(-52deg, #474E7D 0%, #3B4269 100%);
+    box-shadow: -4px -4px 17px 0 #5F69A8, 4px 4px 12px 0 #252942;
+    border-radius: 50px;    
+    border: 0;
+    border: inherit;
+    color: white;
+    margin-right: 1vw;
+}
+#input_box{
+    width: 50vw;
+    height: inherit;
+    /* background-image: linear-gradient(-52deg, #474E7D 0%, #3B4269 100%);
+    box-shadow: -4px -4px 17px 0 #5F69A8, 4px 4px 12px 0 #252942;
+    border: 0; */
+    border: inherit;
+    color: white;
+    margin-left: 1vw;
+    font-size: 34px;
+    text-indent: 3%;
+    background:transparent;
+    border: none;
+    outline: none;
+}
+
+.image_btn{
+   width: inherit;
+   height: inherit;
+   margin:0 0 0 0;
+   border: 0;
+}
+
+#avatar{
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    align-content: space-between;
+    position: relative;
+    height: inherit;
+    width: fit-content;
+    
+}
+#button{
+    width: 5.5vw;
+    height: 5.5vw;
     padding: 0;
     border: none;
     margin-right: 2vw;
@@ -23,42 +99,75 @@ html, body{
      top: 50%;
      left: 50%;
 }
-#buttons{
-    display: flex;
-    flex-flow: row nowrap;
-    align-items: center;
-    align-content: space-between;
-    left: 0;
-}
-#finder{
-    width: fit-content;
-    height: 5vw;
-    display: flex;
-    flex-flow: row nowrap;
-    align-content: center;
-    text-align: center;
-    align-items: center;
-}
-#input_box{
-    width: 50vw;
-    height: inherit;
-    background-image: linear-gradient(-52deg, #474E7D 0%, #3B4269 100%);
-    box-shadow: -4px -4px 17px 0 #5F69A8, 4px 4px 12px 0 #252942;
-    border-radius: 50px;    
-    border: 0;
-    border: inherit;
-    color: white;
-    margin-right: 1vw;
-}
-#taskbar{
-    width: 100%;
-    height: 25%;
-    display: flex;
-    align-items: center;
-    align-content: space-between;
-}
-.image_btn{
-   width: inherit;
-   height: inherit;
-}
 
+#ava_img{
+    width: 5.5vw;
+    height: 5.5vw;
+    padding: 0;
+    border: none;
+    margin-right: 2vw;
+    display: block;
+     cursor: pointer;
+     text-align: center;
+     align-items: center;
+     align-content: center;
+     top: 50%;
+     left: 50%;
+}
+#welcome_statement{
+    color: #6370C0;
+    font-size: 22px;
+
+}
+#main{
+    width: 100%;
+    height: fit-content;
+}
+#sidebar{
+    float: right;
+    width: 25%;
+    height: fit-content;  
+    background: #383E63;
+    box-shadow: -2px -2px 6px 0 #4C5487, 2px 2px 6px 0 #383E63;
+    border-radius: 53px 0 0 53px; 
+    text-align: center;   
+    
+}
+#infected{
+    font-family: Helvetica;
+    font-size: 31px;
+    color: #FFFFFF;
+    text-align: center;
+    margin-bottom: 3vh;
+    margin-top: 2vh;
+}
+#death{
+    font-family: Helvetica;
+font-size: 33px;
+color: #FFFFFF;
+text-align: center;
+margin-bottom: 3vh;
+}
+#cured{
+    font-family: Helvetica;
+font-size: 31px;
+color: #FFFFFF;
+text-align: center;
+margin-bottom: 3vh;
+}
+#hyperlinks{
+    background: #D8D8D8;
+border: 1px solid #979797;
+border-radius: 22px 22px 0 57px;
+}
+.links{
+    width: 12vw;
+    height: auto;
+}
+#category-options{
+    background: #383E63;
+box-shadow: 2px 2px 4px 0 #383E63, -2px -2px 4px 0 #4C5487;
+border-radius: 0 80px 80px 0;
+float: left;
+width: 25%;
+}

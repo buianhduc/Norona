@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="91px" height="91px" viewBox="0 0 91 91" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 64 (93537) - https://sketch.com -->
+    <title>Chosen Items</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="88.3804672%" y1="90.6270403%" x2="10.8472359%" y2="8.1857885%" id="linearGradient-1">
+            <stop stop-color="#3B4269" offset="0%"></stop>
+            <stop stop-color="#474E7D" offset="100%"></stop>
+        </linearGradient>
+        <path d="M21.7930242,-8.80464262e-16 L49.2069758,8.80464262e-16 C56.7848851,-5.11575092e-16 59.5328181,0.789017695 62.3031885,2.27062798 C65.0735589,3.75223827 67.2477617,5.92644115 68.729372,8.69681152 C70.2109823,11.4671819 71,14.2151149 71,21.7930242 L71,49.2069758 C71,56.7848851 70.2109823,59.5328181 68.729372,62.3031885 C67.2477617,65.0735589 65.0735589,67.2477617 62.3031885,68.729372 C59.5328181,70.2109823 56.7848851,71 49.2069758,71 L21.7930242,71 C14.2151149,71 11.4671819,70.2109823 8.69681152,68.729372 C5.92644115,67.2477617 3.75223827,65.0735589 2.27062798,62.3031885 C0.789017695,59.5328181 3.41050061e-16,56.7848851 -5.86976174e-16,49.2069758 L5.86976174e-16,21.7930242 C-3.41050061e-16,14.2151149 0.789017695,11.4671819 2.27062798,8.69681152 C3.75223827,5.92644115 5.92644115,3.75223827 8.69681152,2.27062798 C11.4671819,0.789017695 14.2151149,5.11575092e-16 21.7930242,-8.80464262e-16 Z" id="path-2"></path>
+        <filter x="-20.9%" y="-20.9%" width="141.8%" height="141.8%" filterUnits="objectBoundingBox" id="filter-3">
+            <feOffset dx="3.3" dy="3.3" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="3.3" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.188235294   0 0 0 0 0.207843137   0 0 0 0 0.329411765  0 0 0 1 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feOffset dx="-3.3" dy="-3.3" in="SourceAlpha" result="shadowOffsetOuter2"></feOffset>
+            <feGaussianBlur stdDeviation="3.3" in="shadowOffsetOuter2" result="shadowBlurOuter2"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.329411765   0 0 0 0 0.364705882   0 0 0 0 0.588235294  0 0 0 1 0" type="matrix" in="shadowBlurOuter2" result="shadowMatrixOuter2"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="shadowMatrixOuter2"></feMergeNode>
+            </feMerge>
+        </filter>
+        <circle id="path-4" cx="18.5" cy="18.5" r="18.5"></circle>
+        <filter x="-14.2%" y="-14.2%" width="128.4%" height="128.4%" filterUnits="objectBoundingBox" id="filter-5">
+            <feOffset dx="-0.5" dy="-0.5" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="1.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.270588235   0 0 0 0 0.0235294118   0 0 0 0 0.0235294118  0 0 0 1 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feOffset dx="0.5" dy="0.5" in="SourceAlpha" result="shadowOffsetOuter2"></feOffset>
+            <feGaussianBlur stdDeviation="1.5" in="shadowOffsetOuter2" result="shadowBlurOuter2"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.984313725   0 0 0 0 0.0941176471   0 0 0 0 0.0941176471  0 0 0 1 0" type="matrix" in="shadowBlurOuter2" result="shadowMatrixOuter2"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="shadowMatrixOuter2"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-HD" transform="translate(-195.000000, -13.000000)">
+            <g id="Chosen-Items" transform="translate(205.000000, 23.000000)">
+                <g id="Rectangle">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-2"></use>
+                    <use fill="url(#linearGradient-1)" fill-rule="evenodd" xlink:href="#path-2"></use>
+                </g>
+                <g id="Shopping-Bag" transform="translate(18.000000, 11.984124)" stroke="#1E2136" stroke-width="2">
+                    <polygon id="Path-4" points="5.68816989 9.01587617 27.7369242 9.01587617 34.3651749 38.166234 -1.8813917e-14 38.166234"></polygon>
+                    <path d="M8.40056999,16.047456 C14.1893988,-5.349152 19.8442647,-5.349152 25.3651677,16.047456" id="Path-5"></path>
+                </g>
+            </g>
+            <g id="Chosen-Items" transform="translate(249.000000, 16.000000)">
+                <g id="Group-2">
+                    <g id="Oval">
+                        <use fill="black" fill-opacity="1" filter="url(#filter-5)" xlink:href="#path-4"></use>
+                        <use fill="#A00F0F" fill-rule="evenodd" xlink:href="#path-4"></use>
+                    </g>
+                    <text id="1" font-family="Helvetica" font-size="24" font-weight="normal" fill="#DBC6C6">
+                        <tspan x="12" y="27">1</tspan>
+                    </text>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
