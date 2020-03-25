@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
     <link rel="stylesheet" href="Main_page.css">
-    <script src="Main_page_style.js"></script>
+    <link rel="stylesheet" href="checkbox.css">
     <title>Norona</title>
 </head>
 
@@ -15,8 +15,8 @@
 
     <div id="taskbar">
         <div id="buttons">
-            <img src="SVG images/menu.svg" alt="" class="button">
-            <img src="SVG images/Category.svg" alt="" class="button">
+            <img src="SVG images/menu.svg" alt="" class="button" onclick="window.location.href ='Main_page.html'">
+            <img src="SVG images/Category.svg" alt="" class="button" id="category-button">
             <img src="SVG images/Chosen items.svg" alt="" class="button">
         </div>
         <div id="finder">
@@ -29,37 +29,69 @@
         </div>
     </div>
     <div id="category-options">
-        <ul>
-            <li>
-                <span>Khẩu trang</span>
-                <ul>
-                    <li><input type="checkbox"><span>Trẻ em</span></li>
-                    <li><input type="checkbox"><span>Người Lớn</span></li>
-                    <li><input type="checkbox"><span>Mọi lứa tuổi</span></li>
-                    <li><input type="checkbox"><span>Phòng độc</span></li>
-                    <li><input type="checkbox"><span>N95</span></li>
-                </ul>
-            </li>
-            <li>
-                <span>Nước rửa tay khô</span>
-                <ul>
-                    <li><input type="checkbox"><span>Nhỏ</span></li>
-                    <li><input type="checkbox"><span>Vừa</span></li>
-                    <li><input type="checkbox"><span>Lớn</span></li>
-                </ul>
-            </li>
+        <div>
+            <div id="masks">
+                <h1>Khẩu trang</h1>
+                <div class="box">
+                    <input id="mask-kids" type="checkbox">
+                    <span class="check"></span>
+                    <label for="mask-kids">Trẻ em</label>
+                </div>
+                <div class="box">
+                    <input id="mask-adults" type="checkbox">
+                    <span class="check"></span>
+                    <label for="mask-adults">Người lớn</label>
+                </div>
+                <div class="box">
+                    <input id="mask-all-ages" type="checkbox">
+                    <span class="check"></span>
+                    <label for="mask-all-ages">Mọi lứa tuổi</label>
+                </div>
+                <div class="box">
+                    <input id="mask-gases" type="checkbox">
+                    <span class="check"></span>
+                    <label for="mask-gases">Phòng độc</label>
+                </div>
+            </div>
+            <div id="sanitizer">
+                <h1>Nước rửa tay khô</h1>
+                <div class="box">
+                    <input id="sanitizer-s" type="checkbox">
+                    <span class="check"></span>
+                    <label for="sanitizer-s">Cỡ nhỏ</label>
+                </div>
+                <div class="box">
+                    <input id="sanitizer-m" type="checkbox">
+                    <span class="check"></span>
+                    <label for="sanitizer-m">Cỡ vừa</label>
+                </div>
+                <div class="box">
+                    <input id="sanitizer-l" type="checkbox">
+                    <span class="check"></span>
+                    <label for="sanitizer-l">Cớ lớn</label>
+                </div>
+            </div>
+            <div id="soap">
+                <h1>Nước rửa tay thường</h1>
+                <div class="box">
+                    <input id="soap-s" type="checkbox">
+                    <span class="check"></span>
+                    <label for="soap-s">Cỡ nhỏ</label>
+                </div>
+                <div class="box">
+                    <input id="soap-m" type="checkbox">
+                    <span class="check"></span>
+                    <label for="soap-m">Cỡ vừa</label>
+                </div>
+                <div class="box">
+                    <input id="soap-l" type="checkbox">
+                    <span class="check"></span>
+                    <label for="soap-l">Cớ lớn</label>
+                </div>
+            </div>
+        </div>
 
-            <li>
-                <span>Nước rửa tay thường</span>
-                <ul>
-                    <li><input type="checkbox"><span>Nhỏ</span></li>
-                    <li><input type="checkbox"><span>Vừa</span></li>
-                    <li><input type="checkbox"><span>Lớn</span></li>
-                </ul>
-            </li>
-        </ul>
     </div>
-    <div id="main">
         <div id="sidebar">
             <div id="information-container">
                 <div id="infected">
@@ -77,10 +109,19 @@
             </div>
             <div id="hyperlinks">
                 <div>
-                    <img id="WHO" class="links" src="SVG images/WHO.png">
+                    <img id="WHO" class="links" src="SVG images/WHO.png" onclick="window.open(
+                        'https://www.who.int/',
+                        '_blank'
+                      );">
                     <img id="Health_ministry" src="SVG images/marketingyte.com - logo bo y te viet nam PNG.png"
-                        class="links">
-                    <img id="CDC" src="SVG images/CDC.png" class="links">
+                        class="links" onclick="window.open(
+                            'https://moh.gov.vn/',
+                            '_blank'
+                          );">
+                    <img id="CDC" src="SVG images/CDC.png" class="links" onclick="window.open(
+                        'https://www.cdc.gov/',
+                        '_blank' 
+                      );">
                 </div>
 
                 <div>
@@ -170,7 +211,6 @@
                 </div>
             </div>
         </div>
-    </div>
 
     <script src="Main_page.js"></script>
     <!-- The core Firebase JS SDK is always required and must be listed first -->
