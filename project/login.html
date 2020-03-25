@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="login.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <title>Face Mask Shop-Login</title>
+    <style>
+        .product-options {
+            margin-top: 1px
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bg-img" id="login_div">
+        <div class="content">
+            <header>Login Form</header>
+            <form action="#">
+                <div class="field">
+                    <span class="fa fa-user"></span>
+                    <input type="text" required placeholder="Email or Phone" id="email_field">
+                </div>
+                <div class="field space">
+                    <span class="fa fa-lock"></span>
+                    <input type="password" class="pass-key" required placeholder="Password" id="password_field">
+                    
+                </div>
+                <div class="pass">
+                    <a href="#">Forgot Password?</a>
+                </div>
+                <div class="field">
+                    <button onclick="login()">LOGIN</button>
+                </div>
+
+            
+        </div>
+    </div>
+    <script src="login.js"></script>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.12.0/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/7.12.0/firebase-analytics.js"></script>
+
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyDIy4r5iF8TyKehJkA7ZfowGij-u9K0Tws",
+            authDomain: "test-firebase-f8e49.firebaseapp.com",
+            databaseURL: "https://test-firebase-f8e49.firebaseio.com",
+            projectId: "test-firebase-f8e49",
+            storageBucket: "test-firebase-f8e49.appspot.com",
+            messagingSenderId: "1083534181869",
+            appId: "1:1083534181869:web:736ad895908bb994c413e4",
+            measurementId: "G-KNRLQX8LTN"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        firebase.analytics();
+    </script>
+    <script src="login.js"></script>
+</body>
+
+</html>
