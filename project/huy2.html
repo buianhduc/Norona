@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" media="screen" href="huy2.css" />
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <title>Shopee Cart</title>
+</head>
+
+<body>
+    <div id="header">
+        <ul>
+            <li><a href="index.html" target="#">
+                    <div id="checkout">Home</div>
+                </a></li>
+                
+                
+                <li><a href="huy-contact.html" target="#">CONTACT US</a></li>
+        </ul>
+    </div>
+    <h1>Shopping Cart</h1>
+
+    <div class="shopping-cart">
+        <div class="column-labels">
+            <label class="product-image">Image</label>
+            <label class="product-details">Product</label>
+            <label class="product-price">Price</label>
+            <label class="product-quantity">Quantity</label>
+            <label class="product-removal">Remove</label>
+            <label class="product-line-price">Total</label>
+        </div>
+
+        <div class="product">
+
+        </div>
+
+        <div class="totals">
+
+        </div>
+
+        <button class="checkout">
+            <div id="paypal-button"></div>
+
+            <!-- Include the PayPal JavaScript SDK -->
+            <script src="https://www.paypal.com/sdk/js?client-id=sb&currency=USD"></script>
+
+            <script>
+                let total = parseFloat(localStorage.getItem("total"))
+                console.log(total)
+                // Render the PayPal button into #paypal-button-container
+                paypal.Buttons({
+
+                    // Set up the transaction
+                    createOrder: function (data, actions) {
+                        return actions.order.create({
+                            purchase_units: [{
+                                amount: {
+                                    value: total
+                                }
+                            }]
+                        });
+                    },
+
+                    // Finalize the transaction
+                    onApprove: function (data, actions) {
+                        return actions.order.capture().then(function (details) {
+                            // Show a success message to the buyer
+                            alert('Giao dịch thành công, chúc ' + details.payer.name.given_name + ' ăn ngon !');
+                            window.open("https://huythanthanh.github.io/project/");
+                        });
+                    }
+
+
+                }).render('#paypal-button');
+            </script>
+        </button>
+
+
+    </div>
+
+    <script src="huy2.js"></script>
+</body>
+
+</html>
