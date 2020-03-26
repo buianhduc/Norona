@@ -22,11 +22,11 @@ for (var x in jsonObject){
     if (jsonObject.hasOwnProperty(x)){
         var newobj=jsonObject[x];
         items.insertAdjacentHTML("afterbegin", `<div class="item" id=${newobj.id}>
-        <div class="image"><img src=${newobj.picture}></div>
+        <img src=${newobj.picture} class="image" style="width: 200px">
         <div class="Description">
             <div class="name">${newobj.name}</div>
             <div class="price">${newobj.price}</div>
         </div>
-    </div>`)
+    </<img>`)
     }
   }
