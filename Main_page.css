@@ -19,6 +19,9 @@ html, body{
     align-items: center;
     justify-content: space-around;
     top: 0;
+    position: sticky;
+    background-color: #454B6F;
+    z-index: 1;
 }
 
 #buttons{

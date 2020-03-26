@@ -24,9 +24,19 @@ for (var x in jsonObject){
         items.insertAdjacentHTML("afterbegin", `<div class="item" id=${newobj.id}>
         <img src=${newobj.picture} class="image" style="width: 200px">
         <div class="Description">
+        <div class="des-container">
             <div class="name">${newobj.name}</div>
-            <div class="price">${newobj.price}</div>
+            <div class="price">${newobj.price} đ/hộp</div>
+            <div id="container">
+  <button class="learn-more">
+    <span class="circle" aria-hidden="true">
+      <span class="icon arrow"></span>
+    </span>
+    <span class="button-text">Thêm vào rỏ hàng</span>
+  </button>
+</div>
         </div>
-    </<img>`)
+        </div>
+        `)
     }
   }

@@ -22,3 +22,7 @@ function openNav() {
         closeNav();
     }
   })
+document.getElementsByClassName("Description").addEventListener("mouseover", function(){
+  
+}
+)
