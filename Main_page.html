@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="checkbox.css">
     <link rel="stylesheet" href="products.css">
     <link rel="stylesheet" href="Button-cart.css">
+    <link rel="stylesheet" href="dropdownbox.css">
     <script src="https://cdn.jsdelivr.net/npm/fuse.js"></script>
     <script src="https://kit.fontawesome.com/91998e0ee4.js" crossorigin="anonymous"></script>
     <script type="text/javascript" src="database.json"></script>
@@ -36,35 +37,27 @@
     </div>
     <div id="category-options">
         <div>
+            <div id="price" class="dropdown">
+                <button class="dropbtn">Giá</button>
+                <div class="dropdown-content">
+                    <a href="#">Thấp dần</a>
+                    <a href="#">Cao dần</a>
+                  </div>
+            </div>
             <div id="masks">
                 <h1>Khẩu trang</h1>
                 <div class="box">
-                    <input id="mask-kids" type="checkbox">
-                    <span class="check"></span>
-                    <label for="mask-kids">Trẻ em</label>
-                </div>
-                <div class="box">
-                    <input id="mask-adults" type="checkbox">
-                    <span class="check"></span>
-                    <label for="mask-adults">Người lớn</label>
-                </div>
-                <div class="box">
-                    <input id="mask-all-ages" type="checkbox">
-                    <span class="check"></span>
-                    <label for="mask-all-ages">Mọi lứa tuổi</label>
-                </div>
-                <div class="box">
-                    <input id="mask-gases" type="checkbox">
+                    <input id="mask-gases" type="checkbox" id="gases_category">
                     <span class="check"></span>
                     <label for="mask-gases">Phòng độc</label>
                 </div>
                 <div class="box">
-                    <input id="mask-medical" type="checkbox">
+                    <input id="mask-medical" type="checkbox" id="medical_category">
                     <span class="check"></span>
                     <label for="mask-medical">Khẩu trang y tế</label>
                 </div>
                 <div class="box">
-                    <input id="mask-cotton" type="checkbox">
+                    <input id="mask-cotton" type="checkbox" id="medical_category">
                     <span class="check"></span>
                     <label for="mask-cotton">Khẩu trang vải</label>
                 </div>

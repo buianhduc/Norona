@@ -21,13 +21,13 @@ var items = document.getElementById("items")
 for (var x in jsonObject){
     if (jsonObject.hasOwnProperty(x)){
         var newobj=jsonObject[x];
-        items.insertAdjacentHTML("afterbegin", `<div class="item" id=${newobj.id}>
+        items.insertAdjacentHTML("afterbegin", `<div class="item" id=${newobj.id} class="${newobj.category}">
         <img src=${newobj.picture} class="image" style="width: 200px">
         <div class="Description">
         <div class="des-container">
             <div class="name">${newobj.name}</div>
             <div class="price">${newobj.price} đ/hộp</div>
-            <div id="container">
+            <div class="container add-cart-btn">
   <button class="learn-more">
     <span class="circle" aria-hidden="true">
       <span class="icon arrow"></span>

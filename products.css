@@ -57,7 +57,7 @@ position: absolute;
 .name{
     font-family: 'Gotu', sans-serif;
     color: white;
-    font-size:30px;
+    font-size:23px;
 }
 .price{
     font-family: 'Open Sans Condensed', sans-serif;
@@ -65,7 +65,7 @@ position: absolute;
     font-size: 20px;
 }
 .add-cart-btn{
-    position: absolute;
-    bottom: 0;
-    right: 0;
+    position: relative;
+    padding-bottom: 0;
+    padding-top: auto;
 }

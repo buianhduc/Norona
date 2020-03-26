@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Mukta:700');
 
-
+.container{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
  .learn-more {
 	 position: relative;
 	 display: inline-block;
