@@ -1,16 +1,100 @@
 [
-{
+    {
         "name" : "Khẩu trang cho trẻ em",
-        "prize": "10000",
+        "price": "10000",
         "category": "kids",
         "picture" : "https://babyfood.com.vn/data/Upload/images/khau-trang-cho-be-bmc-nhat-ban-tui-mau-xanh-set-7.JPG",
-        "id" :  "0001"
-},
-{
-    "name" :"Khẩu trang cho người lớn",
-    "prize":"7000",
-    "category": "adults",
-    "picture": "https://gutyhome.com/wp-content/uploads/2019/11/607910adfa34d7ef20d11f7337e66184e.jpg",
-    "id" :  "0001"
-}
+        "id" : "0001"
+    },
+    {
+        "name" : "N95",
+        "price": "10000",
+        "category": "Khẩu trang y tế",
+        "picture" : "https://babyfood.com.vn/data/Upload/images/khau-trang-cho-be-bmc-nhat-ban-tui-mau-xanh-set-7.JPG",
+        "id" : "0002"
+    },
+
+    {
+        "name" : "3M 9001",
+        "price": "10000",
+        "category": "Khẩu trang y tế",
+        "picture" : "https://babyfood.com.vn/data/Upload/images/khau-trang-cho-be-bmc-nhat-ban-tui-mau-xanh-set-7.JPG",
+        "id" : "0003"
+    },
+
+    {
+        "name" : "Honeywell H901",
+        "price": "10000",
+        "category": "Khẩu trang y tế",
+        "picture" : "https://babyfood.com.vn/data/Upload/images/khau-trang-cho-be-bmc-nhat-ban-tui-mau-xanh-set-7.JPG",
+        "id" : "0004"
+    },
+
+    {
+        "name" : "Uni-Charm 3D Mask",
+        "price": "10000",
+        "category": "Khẩu trang y tế",
+        "picture" : "https://babyfood.com.vn/data/Upload/images/khau-trang-cho-be-bmc-nhat-ban-tui-mau-xanh-set-7.JPG",
+        "id" : "0005"
+    },
+
+
+
+    {
+        "name" : "Khẩu trang vải VN",
+        "price": "10000",
+        "category": "Khẩu trang vải",
+        "picture" : "https://babyfood.com.vn/data/Upload/images/khau-trang-cho-be-bmc-nhat-ban-tui-mau-xanh-set-7.JPG",
+        "id" : "0006"
+    },
+
+
+
+    {
+        "name" : "Ronal",
+        "price": "10000",
+        "category": "Khẩu trang vải",
+        "picture" : "https://babyfood.com.vn/data/Upload/images/khau-trang-cho-be-bmc-nhat-ban-tui-mau-xanh-set-7.JPG",
+        "id" : "0007"
+    },
+
+
+
+    {
+        "name" : "MV5-Binh chủng hóa học VN",
+        "price": "10000",
+        "category": "Mặt nạ phòng độc",
+        "picture" : "https://babyfood.com.vn/data/Upload/images/khau-trang-cho-be-bmc-nhat-ban-tui-mau-xanh-set-7.JPG",
+        "id" : "0008"
+    },
+
+
+
+    {
+        "name" : "3M 6200",
+        "price": "10000",
+        "category": "Mặt nạ phòng độc",
+        "picture" : "https://babyfood.com.vn/data/Upload/images/khau-trang-cho-be-bmc-nhat-ban-tui-mau-xanh-set-7.JPG",
+        "id" : "0009"
+    },
+
+
+
+    {
+        "name" : "Mặt nạ Liên Xô",
+        "price": "10000",
+        "category": "Mặt nạ phòng độc",
+        "picture" : "https://babyfood.com.vn/data/Upload/images/khau-trang-cho-be-bmc-nhat-ban-tui-mau-xanh-set-7.JPG",
+        "id" : "0010"
+    },
+
+
+
+    {
+        "name" : "VIM mọi size",
+        "price": "10000",
+        "category": "Nước rửa tay khô",
+        "picture" : "https://babyfood.com.vn/data/Upload/images/khau-trang-cho-be-bmc-nhat-ban-tui-mau-xanh-set-7.JPG",
+        "id" : "0011"
+    }
 ]
