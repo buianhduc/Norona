@@ -198,16 +198,29 @@ h1{
     grid-gap: 25px;
     grid-template-columns: repeat(3, 1fr);
 }
-#item{
+.item{
     grid-row: span 1;
     grid-column: span 1;
-    background: #4F5680;
+width: fit-content;
+height: 50vh;
+background: #4F5680;
 box-shadow: 3px 3px 7px 0 #7C87C9, -3px -3px 7px 0 #222537;
 border-radius: 0 0 59px 59px;
+display: flex;
+flex-flow: column nowrap;
+align-items: center;
+justify-content: stretch;
 }
-#image{
+/* .Description{
+    background: #96A4FC;
+border: 1px solid #979797;
+box-shadow: 0 2px 4px 0 rgba(0,0,0,0.50);
+border-radius: 16px 16px 64px 64px;
+width: 100%;
+flex-grow: 1;
+} */
+.image img{
     background-color: #ffffff;
 	 display: block;
-	 min-height: 200px;
-	 width: 100%;
+     width: 75%;
 }
