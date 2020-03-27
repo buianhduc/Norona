@@ -1,0 +1,20 @@
+{"items":[
+    {
+        "name" : "Khẩu trang vải VN",
+        "price": 10000,
+        "category": "cotton",
+        "picture" : "https://babyfood.com.vn/data/Upload/images/khau-trang-cho-be-bmc-nhat-ban-tui-mau-xanh-set-7.JPG",
+        "id" : "0006"
+    },
+
+
+
+    {
+        "name" : "Ronal",
+        "price": 10000,
+        "category": "cotton",
+        "picture" : "https://babyfood.com.vn/data/Upload/images/khau-trang-cho-be-bmc-nhat-ban-tui-mau-xanh-set-7.JPG",
+        "id" : "0007"
+    }
+]
+}
