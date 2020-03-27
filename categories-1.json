@@ -1,0 +1,30 @@
+{"items":[   
+    {
+        "name" : "MV5-Binh chủng hóa học VN",
+        "price": 10000,
+        "category": "gases",
+        "picture" : "https://babyfood.com.vn/data/Upload/images/khau-trang-cho-be-bmc-nhat-ban-tui-mau-xanh-set-7.JPG",
+        "id" : "0001"
+    },
+
+
+
+    {
+        "name" : "3M 6200",
+        "price": 10000,
+        "category": "gases",
+        "picture" : "https://babyfood.com.vn/data/Upload/images/khau-trang-cho-be-bmc-nhat-ban-tui-mau-xanh-set-7.JPG",
+        "id" : "0002"
+    },
+
+
+
+    {
+        "name" : "Mặt nạ Liên Xô",
+        "price": 10000,
+        "category": "gases",
+        "picture" : "https://babyfood.com.vn/data/Upload/images/khau-trang-cho-be-bmc-nhat-ban-tui-mau-xanh-set-7.JPG",
+        "id" : "0003"
+    }
+]
+}
