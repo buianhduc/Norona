@@ -36,28 +36,32 @@
             <div id="welcome_statement">Good morning, Sir</div>
         </div>
     </div>
-    <div class="cart">
-        <span class="close-cart">Close</span>
-        <h2>Giỏ hàng của bạn</h2>
-        <!-- cart items -->
-        <div class="cart-items">
-            <img src="https://babyfood.com.vn/data/Upload/images/khau-trang-cho-be-bmc-nhat-ban-tui-mau-xanh-set-7.JPG" alt="">
-            <div>
-                <h4>Khẩu trang y tế</h4>
-                <h5>10000 đ/cái</h5>
-                <span>remove</span>
+    <div class="cart-overlay">
+        <div class="cart">
+            <span class="close-cart">Close</span>
+            <h2>Giỏ hàng của bạn</h2>
+            <!-- cart items -->
+            <div class="cart-items">
+                <img src="https://babyfood.com.vn/data/Upload/images/khau-trang-cho-be-bmc-nhat-ban-tui-mau-xanh-set-7.JPG"
+                    alt="">
+                <div>
+                    <h4>Khẩu trang y tế</h4>
+                    <h5>10000 đ/cái</h5>
+                    <span>remove</span>
+                </div>
+                <div>
+                    <i class="fas fa-chevron-circle-up"></i>
+                    <p class="item-amount">1</p>
+                    <i class="fas fa-chevron-circle-down"></i>
+                </div>
             </div>
-            <div>
-                <i class="fas fa-chevron-circle-up"></i>
-                <p class="item-amount">1</p>
-                <i class="fas fa-chevron-circle-down"></i>
+            <div class="cart-footer">
+                <h3>your total : $ <span class="cart-total">0</span></h3>
             </div>
+            <button class="clear-cart banner-btn"></button>
         </div>
-        <div class="cart-footer">
-            <h3>your total : $ <span class="cart-total">0</span></h3>
-        </div>
-        <button class="clear-cart banner-btn"></button>
     </div>
+
     <div id="category-options">
         <div>
             <div id="price" class="dropdown">
@@ -65,63 +69,67 @@
                 <div class="dropdown-content">
                     <a href="#">Thấp dần</a>
                     <a href="#">Cao dần</a> -->
-                </div>
-            </div>
-            <div id="masks">
-                <h1>Khẩu trang</h1>
-                <div class="box">
-                    <input id="mask-gases" type="checkbox" id="gases_category">
-                    <span class="check"></span>
-                    <label for="mask-gases">Phòng độc</label>
-                </div>
-                <div class="box">
-                    <input id="mask-medical" type="checkbox" id="medical_category">
-                    <span class="check"></span>
-                    <label for="mask-medical">Khẩu trang y tế</label>
-                </div>
-                <div class="box">
-                    <input id="mask-cotton" type="checkbox" id="medical_category">
-                    <span class="check"></span>
-                    <label for="mask-cotton">Khẩu trang vải</label>
-                </div>
-            </div>
-            <div id="sanitizer">
-                <h1>Nước rửa tay khô</h1>
-                <div class="box">
-                    <input id="sanitizer-s" type="checkbox">
-                    <span class="check"></span>
-                    <label for="sanitizer-s">Cỡ nhỏ</label>
-                </div>
-                <div class="box">
-                    <input id="sanitizer-m" type="checkbox">
-                    <span class="check"></span>
-                    <label for="sanitizer-m">Cỡ vừa</label>
-                </div>
-                <div class="box">
-                    <input id="sanitizer-l" type="checkbox">
-                    <span class="check"></span>
-                    <label for="sanitizer-l">Cớ lớn</label>
-                </div>
-            </div>
-            <div id="soap">
-                <h1>Nước rửa tay thường</h1>
-                <div class="box">
-                    <input id="soap-s" type="checkbox">
-                    <span class="check"></span>
-                    <label for="soap-s">Cỡ nhỏ</label>
-                </div>
-                <div class="box">
-                    <input id="soap-m" type="checkbox">
-                    <span class="check"></span>
-                    <label for="soap-m">Cỡ vừa</label>
-                </div>
-                <div class="box">
-                    <input id="soap-l" type="checkbox">
-                    <span class="check"></span>
-                    <label for="soap-l">Cớ lớn</label>
-                </div>
             </div>
         </div>
+        <div id="masks">
+            <h1>Khẩu trang</h1>
+            <div class="box">
+                <input id="mask-gases" type="checkbox" id="gases_category">
+                <span class="check"></span>
+                <label for="mask-gases"><a
+                        href="file:///C:/Users/Admin/Desktop/Norona-master/Norona/KhauTrangChongDoc.html">Phòng
+                        độc</a></label>
+            </div>
+            <div class="box">
+                <input id="mask-medical" type="checkbox" id="medical_category">
+                <span class="check"></span>
+                <label for="mask-medical"><a
+                        href="file:///C:/Users/Admin/Desktop/Norona-master/Norona/KhauTrangYTe.html">Khẩu trang y
+                        tế</a></label>
+            </div>
+            <div class="box">
+                <input id="mask-cotton" type="checkbox" id="medical_category">
+                <span class="check"></span>
+                <label for="mask-cotton"><a href="file:///C:/Users/Admin/Desktop/Norona-master/Norona/KhauTrangVai.html">Khẩu trang vải</a></label>
+            </div>
+        </div>
+        <div id="sanitizer">
+            <h1>Nước rửa tay khô</h1>
+            <div class="box">
+                <input id="sanitizer-s" type="checkbox">
+                <span class="check"></span>
+                <label for="sanitizer-s">Cỡ nhỏ</label>
+            </div>
+            <div class="box">
+                <input id="sanitizer-m" type="checkbox">
+                <span class="check"></span>
+                <label for="sanitizer-m">Cỡ vừa</label>
+            </div>
+            <div class="box">
+                <input id="sanitizer-l" type="checkbox">
+                <span class="check"></span>
+                <label for="sanitizer-l">Cớ lớn</label>
+            </div>
+        </div>
+        <div id="soap">
+            <h1>Nước rửa tay thường</h1>
+            <div class="box">
+                <input id="soap-s" type="checkbox">
+                <span class="check"></span>
+                <label for="soap-s">Cỡ nhỏ</label>
+            </div>
+            <div class="box">
+                <input id="soap-m" type="checkbox">
+                <span class="check"></span>
+                <label for="soap-m">Cỡ vừa</label>
+            </div>
+            <div class="box">
+                <input id="soap-l" type="checkbox">
+                <span class="check"></span>
+                <label for="soap-l">Cớ lớn</label>
+            </div>
+        </div>
+    </div>
 
     </div>
     <div id="sidebar">
@@ -180,6 +188,3 @@
 </body>
 
 </html>
-
-
-
