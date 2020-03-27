@@ -22,7 +22,7 @@ class Products {
     // var jsonObject = JSON.parse(xhReq.responseText);
     // var items = document.getElementById("items")
     try {
-      let result = await fetch('https://raw.githubusercontent.com/buianhduc/Norona/master/categories-2.json');
+      let result = await fetch('https://raw.githubusercontent.com/buianhduc/Norona/master/categories-3.json');
       let data = await result.json();
       let products = data.items;
       products = products.map(item => {
