@@ -1,4 +1,4 @@
-[
+{"items":[
     {
         "name" : "Khẩu trang cho trẻ em",
         "price": 10000,
@@ -98,3 +98,4 @@
         "id" : "0011"
     }
 ]
+}
