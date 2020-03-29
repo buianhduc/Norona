@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="CSS/main-css.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
     <script type="text/javascript" src="database.json"></script>
     <title>Document</title>
 </head>
@@ -17,7 +20,7 @@
                 <a href="#" class=category-btn><img src="SVG images/category.svg" alt=""></a>
             </div>
             <div class="search-er"><span><img src="SVG images/Search-btn.png" alt=""></span><input type="text"
-                    class="input_box" placeholder="Tìm kiếm"></div>
+                    class="input_box" placeholder="Tìm kiếm..."></div>
             <div class="user">
                 <div class="avatar"><img src="SVG images/avatar.svg" alt=""></div>
                 <div class="hello-statement">
@@ -54,10 +57,11 @@
     </div>
     <div class="cart-overlay">
         <div class="cart-btn-wrapper"><button class="cart-btn"><img src="SVG images/arrow-up-cart.png" alt="" ></button></div>
-        <div class="cart-overlay-text">Sản phẩm đã chọn</div>
+        <div class="cart-overlay-text"> <div>Sản phẩm đã chọn </div>
+        <div><button class="clear-cart">Clear cart <i class="fa fa-trash-o"></i></button></div>
+        </div>
         <div class="cart">
             <div class="cart-content-container">
-                
             </div>
             <div class="payment-wrapper">
                 <div class="payment">
@@ -132,6 +136,7 @@
 </script>
     <script src="JS/main-js.js"></script>
     <script src="JS/local-store.js"></script>
+    <script src="JS/search_bar.js"></script>
 </body>
 
 </html>

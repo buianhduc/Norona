@@ -29,9 +29,9 @@
     
 //   }
 $(document).ready(function(){
-  $("#input_box").on("keyup", function() {
+  $(".input_box").on("keyup", function() {
     var value = $(this).val().toLowerCase();
-    $("#items .item").filter(function() {
+    $(".product-center  .item").filter(function() {
       $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
     });
   });

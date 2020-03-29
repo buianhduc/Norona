@@ -9,7 +9,8 @@ const cartItems = document.querySelector('.cart-items')
 const cartTotal = document.querySelector('.cart-total');
 const cartContent = document.querySelector('.cart-content-container');
 const productDOM = document.querySelector('.product-center');
-const clearCartBtn = document.querySelector('.clear-cart')
+const clearCartBtn = document.querySelector('.clear-cart');
+let cartBtnChecker = false;
 //main-cart
 
 let cart = [];
@@ -63,17 +64,18 @@ class UI {
   }
   getBagButtons() {
     const buttons = [...document.getElementsByClassName('add-to-cart-btn')];
+    buttonsDOM = buttons;
     buttons.forEach(button => {
       let id = button.dataset.id;
       let inCart = cart.find(item => item.id == id);
       if (inCart) {
-        button.innerText = "Đã thêm";
+        button.innerHTML = '<img src="SVG images/add-to-cart-successful.svg" alt="">';
         button.disabled = true;
       }
       button.addEventListener('click', (event) => {
-        console.log(event);
+        console.log(event.target);
         
-        event.target.innerText = "Đã thêm";
+        event.target.innerHTML = '<img src="SVG images/add-to-cart-successful.svg" alt="">';
         button.disabled = true;
         // console.log(event);
         // get product from products
@@ -105,7 +107,7 @@ class UI {
   addCartItem(item) {
     const div = document.createElement('div');
     div.innerHTML = `<div class="cart-content">
-    <div><button data-id=${item.id}><img src="SVG images/Close-btn.png" alt="" class="remove-item" </button></div>
+    <div><button data-id=${item.id} class="remove-item"><img src="SVG images/Close-btn.png" alt=""</button></div>
     <div class="cart-items">
         <img src="Media/Bitmap.png" alt="">
         <div>
@@ -126,26 +128,30 @@ class UI {
 
   }
   showCart() {
-      cartOverlay.style.transform = "translateY(0)"
+      if(cartBtnChecker==false){
+        cartOverlay.style.transform = "translateY(0%)"
+      cartBtn.style.transform="rotate(180deg)"
+      cartBtnChecker=true;
+      }
+      else{
+        cartOverlay.style.transform = "translateY(95%)";
+      cartBtn.style.transform="rotate(0deg)";
+      cartBtnChecker=false;
+        
+      }
   }
   setupAPP() {
     cart = Storage.getCart();
     this.setCartValues(cart);
     this.populateCart(cart);
-    cartBtn.addEventListener('click', this.showCart);
-    // closeCartBtn.addEventListener('click', this.hideCart);
-
+      cartBtn.addEventListener('click', this.showCart);
   }
   populateCart(cart) {
     cart.forEach(item => this.addCartItem(item));
   }
-  hideCart() {
-    cartOverlay.classList.remove('transparentBcg');
-    cartDOM.classList.remove('showCart');
-  }
   cartLogic() {
-    // clearCartBtn.addEventListener('click',()=>{
-    //   this.clearCart()})
+    clearCartBtn.addEventListener('click',()=>{
+      this.clearCart()})
   }
   clearCart(){
     let cartItems =cart.map(item => item.id);
@@ -154,10 +160,13 @@ class UI {
       cartContent.removeChild(cartContent.children[0]);
     }
     cartContent.addEventListener('click', event=>{
+      console.log(event.target);
       if(event.target.classList.contains('remove-item')){
         let removeItem = event.target;
         let id=removeItem.dataset.id;
-        cartContent.removeChild(removeItem.parentElement.parentElement.parentElement);
+        // cartContent.removeChild(removeItem.parentElement.parentElement);
+        console.log(removeItem.parentElement.parentElement);
+        
         this.removeItem(id);
       }
       else if(event.target.classList.contains("arrow-up")){
@@ -193,11 +202,11 @@ class UI {
     this.setCartValues(cart);
     Storage.saveCart(cart);
     let button = this.getSingleButton(id);
+    console.log(button);
+    console.log('sjhfjhs');
+    
     button.disabled = false;
-    button.innerHTML = `<span class="circle" aria-hidden="true">
-    <span class="icon arrow"></span>
-</span>
-<span class="button-text">Thêm vào giỏ hàng</span>`;
+    button.innerHTML = `<img src="SVG images/add-to-cart.svg" alt="" >`;
   }
   getSingleButton(id){
     return buttonsDOM.find(button => button.dataset.id === id);
