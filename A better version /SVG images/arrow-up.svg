@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="49px" height="28px" viewBox="0 0 49 28" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 64 (93537) - https://sketch.com -->
+    <title>Path 10</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="1-Chosen-item" transform="translate(-449.000000, -414.000000)">
+            <g id="Group-7" opacity="0.84593564" transform="translate(37.000000, 13.000000)" font-family="Helvetica" font-size="23" font-weight="normal">
+                <g id="Group-5" transform="translate(174.000000, 106.000000)">
+                    <g id="SP1-Copy" transform="translate(258.000000, 0.000000)">
+                        <text id="Khẩu-trang-y-tế-10,0">
+                            <tspan x="8" y="271" fill="#FFFFFF">Khẩu trang y tế </tspan>
+                            <tspan x="8" y="299" fill="#9B9292">10,000 đ/cái</tspan>
+                            <tspan x="133.320801" y="299" fill="#575252"></tspan>
+                        </text>
+                    </g>
+                    <g id="SP1">
+                        <text id="Khẩu-trang-y-tế-10,0">
+                            <tspan x="8" y="271" fill="#FFFFFF">Khẩu trang y tế </tspan>
+                            <tspan x="8" y="299" fill="#9B9292">10,000 đ/cái</tspan>
+                            <tspan x="133.320801" y="299" fill="#575252"></tspan>
+                        </text>
+                    </g>
+                </g>
+            </g>
+            <g id="CHECKOUT" transform="translate(0.000000, 188.000000)">
+                <path d="M1390,0.5 L50,0.5 C36.3309524,0.5 23.9559524,6.04047622 14.9982143,14.9982143 C6.04047622,23.9559524 0.5,36.3309524 0.5,50 L0.5,933.5 L1439.5,933.5 L1439.5,50 C1439.5,36.3309524 1433.95952,23.9559524 1425.00179,14.9982143 C1416.04405,6.04047622 1403.66905,0.5 1390,0.5 Z" id="Rectangle" stroke="#979797" fill="#5A5A5A"></path>
+                <g id="Group-6" transform="translate(25.000000, 107.000000)">
+                    <path d="M840.673766,7.25279055 C832.412536,2.83463632 824.213057,0.5 801.620927,0.5 L64.6945925,0.500724236 C42.6199168,0.547731878 34.5033608,2.87961529 26.326234,7.25279055 C18.1035459,11.6503322 11.6503322,18.1035459 7.25279055,26.326234 C2.83463632,34.5874641 0.5,42.7869433 0.5,65.3790726 L0.500724236,175.305405 C0.547731878,197.380083 2.87961529,205.496639 7.25279055,213.673766 C11.6503322,221.896454 18.1035459,228.349668 26.326234,232.747209 C34.5874641,237.165364 42.7869433,239.5 65.3790726,239.5 L801.620927,239.5 C824.213057,239.5 832.412536,237.165364 840.673766,232.747209 C848.896454,228.349668 855.349668,221.896454 859.747209,213.673766 C864.165364,205.412536 866.5,197.213057 866.5,174.620927 L866.5,65.3790726 C866.5,42.7869433 864.165364,34.5874641 859.747209,26.326234 C855.349668,18.1035459 848.896454,11.6503322 840.673766,7.25279055 Z" id="Rectangle" stroke="#979797" fill="#736F6F"></path>
+                    <g id="Group-8" transform="translate(427.000000, 122.000000)">
+                        <polyline id="Path-10" stroke="#979797" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" points="0 20.5 20.5 0 43 22.5"></polyline>
+                        <text id="1" font-family="Helvetica" font-size="31" font-weight="normal" fill="#FFFFFF">
+                            <tspan x="13" y="47">1</tspan>
+                        </text>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

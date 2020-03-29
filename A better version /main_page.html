@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/main-css.css">
+    <script type="text/javascript" src="database.json"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <div class="nav-bar">
+            <div class="icon">
+                <a class="home" href="#"><img src="SVG images/home.svg" alt=""></a>
+                <a href="#" class=category-btn><img src="SVG images/category.svg" alt=""></a>
+            </div>
+            <div class="search-er"><span><img src="SVG images/Search-btn.png" alt=""></span><input type="text"
+                    class="input_box" placeholder="Tìm kiếm"></div>
+            <div class="user">
+                <div class="avatar"><img src="SVG images/avatar.svg" alt=""></div>
+                <div class="hello-statement">
+                    <div class="hi">Good morning, User</div>
+                    <div class="logout-btn"><span>Log out</span><img src="SVG images/logout-btn.svg" alt=""></div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="corona-virus-information">
+        <img src="SVG images/arrow-right.png" alt="">
+        <div>
+            <div class="information">
+                <div class="infected">
+                    <div class="title-information">Số ca bị nhiễm</div>
+                    <div class="number">382,814</div>
+                </div>
+                <div class="died">
+                    <div class="title-information">Số ca chết</div>
+                    <div class="number">16,578</div>
+                </div>
+                <div class="cured">
+                    <div class="title-information">Số ca bình phục</div>
+                    <div class="number">102,522</div>
+                </div>
+            </div>
+            <div class="href">
+                <img src="Media/Bitmap copy.png" alt="">
+                <img src="../SVG images/marketingyte.com - logo bo y te viet nam PNG.png" alt="">
+                <img src="../SVG images/CDC.png" alt="">
+            </div>
+        </div>
+
+    </div>
+    <div class="cart-overlay">
+        <img src="SVG images/arrow-up-cart.png" alt="">
+        <div class="cart-overlay-text">Sản phẩm đã chọn</div>
+        <div class="cart">
+            <div class="cart-content">
+                <div><img src="SVG images/Close-btn.png" alt="" class="remove-item"></div>
+                <div class="cart-items">
+                    <img src="Media/Bitmap.png" alt="">
+                    <div>
+                        <p>Khẩu trang y tế</p>
+                        <p>10,000 đ/cái</p>
+                    </div>
+                    <div class="Amount">
+                        <div class="Amount-text">Số lượng: </div>
+                        <div>
+                            <img src="SVG images/arrow-up.png" alt="">
+                        <p class="item-amount">1</p>
+                        <img src="SVG images/arrow-down.png" alt="">
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="payment">
+                <div>Thanh toán</div>
+                <div class="jnformation">
+                    <div class="address"><span><b>Địa chỉ: </b></span>Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Natus in voluptas est maxime nisi neque omnis ab voluptatibus aliquid dolore
+                        tempore, nemo vel esse beatae quia. Assumenda ipsa natus rem! </div>
+                    <div class="phone-number"><span><b>Số điện thoại: </b></span>1234567890</div>
+                    <div class="change-information"><img src="SVG images/change-information.svg" alt=""><span> Thay đổi
+                            thông tin: </span></div>
+                </div>
+                <div id="paypal-button-container"></div>
+                <div></div>
+            </div>
+        </div>
+
+    </div>
+    <div class="main">
+        <div class="opener">
+            <div class="open-statement">
+                <div>CHUNG TAY</div>
+                <div>CHỐNG LẠI</div>
+                <div>VIRUS CORONA</div>
+            </div>
+        </div>
+        <div class="grid items">
+            <div class="item" data-id="id">
+                <img src="Media/Bitmap.png" alt="" class="image">
+                <div class="description">
+                    <div class="name">Khẩu trang y tế</div>
+                    <div class="price">10,000 đ/cái</div>
+                </div>
+            </div>
+        </div>
+    </div>
+<script src="https://www.paypal.com/sdk/js?client-id=sb&currency=USD" data-sdk-integration-source="button-factory"></script>
+
+<script>
+  paypal.Buttons({
+      style: {
+          shape: 'rect',
+          color: 'silver',
+          layout: 'horizontal',
+          label: 'paypal',
+          
+      },
+      createOrder: function(data, actions) {
+          return actions.order.create({
+              purchase_units: [{
+                  amount: {
+                      value: '1'
+                  }
+              }]
+          });
+      },
+      onApprove: function(data, actions) {
+          return actions.order.capture().then(function(details) {
+              alert('Transaction completed by ' + details.payer.name.given_name + '!');
+          });
+      }
+  }).render('#paypal-button-container');
+</script>
+    <script src="JS/main-js.js"></script>
+</body>
+
+</html>
