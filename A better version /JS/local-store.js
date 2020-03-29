@@ -1,13 +1,13 @@
 //variable
 
 const cartBtn = document.querySelector('.cart-btn');
-const closeCartBtn = document.querySelector('.close-cart'); //thêm vào sau, ở trong phần tính tiền
+// const closeCartBtn = document.querySelector('.close-cart'); //thêm vào sau, ở trong phần tính tiền
 const clear = document.querySelector('.clear-cart'); //thêm vào sau, ở trong phần tính tiền
 const cartDOM = document.querySelector('.cart'); //thêm vào sau, ở trong phần tính tiền
 const cartOverlay = document.querySelector('.cart-overlay');
 const cartItems = document.querySelector('.cart-items')
 const cartTotal = document.querySelector('.cart-total');
-const cartContent = document.querySelector('.cart-content');
+const cartContent = document.querySelector('.cart-content-container');
 const productDOM = document.querySelector('.product-center');
 const clearCartBtn = document.querySelector('.clear-cart')
 //main-cart
@@ -47,29 +47,22 @@ class UI {
     let result = '';
     products.forEach(products => {
       result = `
-      <div class="item" class="${products.category}">
-    <img src=${products.picture} class="image" style="width: 200px">
-    <div class="Description">
-        <div class="des-container">
-            <div class="name">${products.name}</div>
-            <div class="price">${products.price} đ/hộp</div>
-            <div class="container add-cart-btn">
-                <button class="learn-more .add-to-cart" data-id=${products.id} >
-                    <span class="circle" aria-hidden="true">
-                        <span class="icon arrow"></span>
-                    </span>
-                    <span class="button-text">Thêm vào giỏ hàng</span>
-                </button>
-            </div>
-        </div>
-    </div>`;
+          <div class="item" data-id="${products.id}">
+              <div class="img-container">
+                  <img src="Media/Bitmap.png" alt="" class="image">
+                  <button class="add-to-cart-btn" data-id="${products.id}"><img src="SVG images/add-to-cart.svg" alt="" ></button>
+              </div>
+              <div class="description">
+                  <div class="name">${products.name}</div>
+                  <div class="price">${products.price} đ/cái</div>
+              </div>
+          </div>`
       productDOM.innerHTML += result;
     })
 
   }
   getBagButtons() {
-    const buttons = [...document.getElementsByClassName('.add-to-cart')];
-    buttonsDOM = buttons;
+    const buttons = [...document.getElementsByClassName('add-to-cart-btn')];
     buttons.forEach(button => {
       let id = button.dataset.id;
       let inCart = cart.find(item => item.id == id);
@@ -78,6 +71,8 @@ class UI {
         button.disabled = true;
       }
       button.addEventListener('click', (event) => {
+        console.log(event);
+        
         event.target.innerText = "Đã thêm";
         button.disabled = true;
         // console.log(event);
@@ -109,32 +104,36 @@ class UI {
   }
   addCartItem(item) {
     const div = document.createElement('div');
-    div.innerHTML = `<div class="cart-items">
-    <img src="${item.picture}" alt="">
-    <div>
-        <h4>${item.name}</h4>
-        <h5>${item.price}đ/cái</h5>
-        <span class="remove-item" data-id=${item.id}>remove</span>
-    </div>
-    <div>
-        <i class="fas fa-chevron-circle-up" data-id=${item.id}></i>
-        <p class="item-amount">${item.amount}</p>
-        <i class="fas fa-chevron-circle-down" data-id=${item.id}></i>
+    div.innerHTML = `<div class="cart-content">
+    <div><button data-id=${item.id}><img src="SVG images/Close-btn.png" alt="" class="remove-item" </button></div>
+    <div class="cart-items">
+        <img src="Media/Bitmap.png" alt="">
+        <div>
+            <p>${item.name}</p>
+            <p>${item.price} đ/cái</p>
+        </div>
+        <div class="Amount">
+            <div class="Amount-text">Số lượng: </div>
+            <div>
+                <img src="SVG images/arrow-up.png" alt="">
+            <p class="item-amount">${item.amount}</p>
+            <img src="SVG images/arrow-down.png" alt="">
+            </div>
+        </div>
     </div>
 </div>`;
     cartContent.appendChild(div);
 
   }
   showCart() {
-    cartOverlay.classList.add('transparentBcg');
-    cartDOM.classList.add('showCart');
+      cartOverlay.style.transform = "translateY(0)"
   }
   setupAPP() {
     cart = Storage.getCart();
     this.setCartValues(cart);
     this.populateCart(cart);
     cartBtn.addEventListener('click', this.showCart);
-    closeCartBtn.addEventListener('click', this.hideCart);
+    // closeCartBtn.addEventListener('click', this.hideCart);
 
   }
   populateCart(cart) {
@@ -145,8 +144,8 @@ class UI {
     cartDOM.classList.remove('showCart');
   }
   cartLogic() {
-    clearCartBtn.addEventListener('click',()=>{
-      this.clearCart()})
+    // clearCartBtn.addEventListener('click',()=>{
+    //   this.clearCart()})
   }
   clearCart(){
     let cartItems =cart.map(item => item.id);
@@ -161,7 +160,7 @@ class UI {
         cartContent.removeChild(removeItem.parentElement.parentElement.parentElement);
         this.removeItem(id);
       }
-      else if(event.target.classList.contains("fa-chevron-circle-up")){
+      else if(event.target.classList.contains("arrow-up")){
         let addAmount = event.target;
         let id=addAmount.dataset.id;
         let tempItem =  cart.find(item => item.id===id);
@@ -170,7 +169,7 @@ class UI {
         this.setCartValues(cart);
         addAmount.nextElementSibling.innerText = tempItem.amount;
       }
-      else if(event.target.classList.contains("fa-chevron-circle-down")){
+      else if(event.target.classList.contains("arrow-down")){
         let addAmount = event.target;
         let id=addAmount.dataset.id;
         let tempItem =  cart.find(item => item.id===id);
@@ -198,8 +197,7 @@ class UI {
     button.innerHTML = `<span class="circle" aria-hidden="true">
     <span class="icon arrow"></span>
 </span>
-<span class="button-text">Thêm vào giỏ hàng</span>`; 
-this.hideCart();
+<span class="button-text">Thêm vào giỏ hàng</span>`;
   }
   getSingleButton(id){
     return buttonsDOM.find(button => button.dataset.id === id);
