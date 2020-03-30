@@ -49,7 +49,7 @@ class Products {
 // display product
 class UI {
   displayProducts(products) {
-    console.log(products);
+    // console.log(products);
     let result = '';
     products.forEach(products => {
       result = `
@@ -78,7 +78,7 @@ class UI {
         button.disabled = true;
       }
       button.addEventListener('click', (event) => {
-        console.log(event.target);
+        // console.log(event.target);
         
         event.target.innerHTML = '<img src="SVG images/add-to-cart-successful.svg" alt="">';
         button.disabled = true;
@@ -107,7 +107,7 @@ class UI {
     });
     cartTotal.innerText = parseFloat(tempTotal.toFixed(2));
     // cartItems.innerText= itemsTotal;
-    console.log(cartTotal, itemsTotal); //ddcmm lam lai cho nay di
+    // console.log(cartTotal, itemsTotal); //ddcmm lam lai cho nay di
   }
   addCartItem(item) {
     const div = document.createElement('div');
@@ -122,9 +122,9 @@ class UI {
         <div class="Amount">
             <div class="Amount-text">Số lượng: </div>
             <div>
-                <img src="SVG images/arrow-up.png" alt="">
+                <img src="SVG images/arrow-up.png" alt="" class="arrow-up" data-id=${item.id}>
             <p class="item-amount">${item.amount}</p>
-            <img src="SVG images/arrow-down.png" alt="">
+            <img src="SVG images/arrow-down.png" alt="" class="arrow-down" data-id=${item.id}>
             </div>
         </div>
     </div>
@@ -155,7 +155,7 @@ class UI {
     cart.forEach(item => this.addCartItem(item));
   }
   cartLogic() {
-    console.log('clearCartBtn')
+    // console.log('clearCartBtn')
     clearCartBtn.addEventListener('click',()=>{
       this.clearCart()})
   }
@@ -168,19 +168,21 @@ class UI {
     document.addEventListener('click', event=>{
       console.log(event.target);
       if(event.target.classList.contains('remove-item')){
-        console.log('sdnjsfn');
-        let removeItem = event.target;
-        let id=removeItem.dataset.id;
-        // cartContent.removeChild(removeItem.parentElement.parentElement);
-        console.log(removeItem.parentElement.parentElement);
-        
+        // console.log('sdnjsfn');
+        let remove_Item = event.target;
+        let id=remove_Item.dataset.id;
+        cartContent.removeChild(remove_Item.parentElement.parentElement.parentElement);
+        // console.log(remove_Item.parentElement.parentElement);
+        // console.log('sdnjsfn');
         this.removeItem(id);
       }
       else if(event.target.classList.contains("arrow-up")){
         let addAmount = event.target;
         let id=addAmount.dataset.id;
         let tempItem =  cart.find(item => item.id===id);
+        console.log(tempItem.amount);
         tempItem.amount = tempItem.amount +1;
+        console.log(tempItem.amount)
         Storage.saveCart(cart);
         this.setCartValues(cart);
         addAmount.nextElementSibling.innerText = tempItem.amount;
@@ -193,11 +195,10 @@ class UI {
         if(tempItem.amount>0){
           Storage.saveCart(cart);
         this.setCartValues(cart);
-        // addAmount.innerText = tempItem.amount;
-        console.log(addAmount.previousElementSibling);
+        addAmount.previousElementSibling.innerText = tempItem.amount;          
         }
         else{
-          cartContent.removeChild(addAmount.parentElement.parentElement.parentElement);
+         cartContent.removeChild(addAmount.parentElement.parentElement.parentElement.parentElement.parentElement);
           this.removeItem(id);
         }
         
@@ -209,8 +210,8 @@ class UI {
     this.setCartValues(cart);
     Storage.saveCart(cart);
     let button = this.getSingleButton(id);
-    console.log(button);
-    console.log('sjhfjhs');
+    // console.log(button);
+    // console.log('sjhfjhs');
     
     button.disabled = false;
     button.innerHTML = `<img src="SVG images/add-to-cart.svg" alt="" >`;
