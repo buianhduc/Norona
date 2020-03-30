@@ -11,6 +11,11 @@ const cartContent = document.querySelector('.cart-content-container');
 const productDOM = document.querySelector('.product-center');
 const clearCartBtn = document.querySelector('.clear-cart');
 let cartBtnChecker = false;
+const CoronaInformationBtn = document.getElementsByClassName('corona-information-btn');
+const CoronaVirusInformation = document.getElementsByClassName('corona-virus-information');
+
+
+
 //main-cart
 
 let cart = [];
@@ -107,7 +112,7 @@ class UI {
   addCartItem(item) {
     const div = document.createElement('div');
     div.innerHTML = `<div class="cart-content">
-    <div><button data-id=${item.id} class="remove-item"><img src="SVG images/Close-btn.png" alt=""</button></div>
+    <div><img src="SVG images/Close-btn.png" alt="" data-id=${item.id} class="remove-item"></div>
     <div class="cart-items">
         <img src="Media/Bitmap.png" alt="">
         <div>
@@ -150,6 +155,7 @@ class UI {
     cart.forEach(item => this.addCartItem(item));
   }
   cartLogic() {
+    console.log('clearCartBtn')
     clearCartBtn.addEventListener('click',()=>{
       this.clearCart()})
   }
@@ -159,9 +165,10 @@ class UI {
     while(cartContent.children.length>0){
       cartContent.removeChild(cartContent.children[0]);
     }
-    cartContent.addEventListener('click', event=>{
+    document.addEventListener('click', event=>{
       console.log(event.target);
       if(event.target.classList.contains('remove-item')){
+        console.log('sdnjsfn');
         let removeItem = event.target;
         let id=removeItem.dataset.id;
         // cartContent.removeChild(removeItem.parentElement.parentElement);
@@ -241,6 +248,6 @@ document.addEventListener("DOMContentLoaded", () => {
   })
     .then(() => {
       ui.getBagButtons();
-      ui.cartLogic();
+      ui.cartLogic();  
     })
 })

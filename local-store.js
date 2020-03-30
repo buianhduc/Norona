@@ -145,6 +145,7 @@ class UI {
     cartDOM.classList.remove('showCart');
   }
   cartLogic() {
+    console.log(clearCartBtn);
     clearCartBtn.addEventListener('click',()=>{
       this.clearCart()})
   }

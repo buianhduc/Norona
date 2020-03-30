@@ -30,7 +30,7 @@ html,body{
     align-items:center;
     position: fixed;
     background-color: var(--default-background-color);
-    z-index: 2;
+    z-index: 3;
 }
 .icon > a > img{
     width: 30%;
@@ -116,9 +116,16 @@ text-align: center;
 /* End of NavBar */
 
 /* start of corona virus information */
+.corona-information-btn{
+    background-color: transparent;
+    width: auto;
+    height: auto;
+    border: none;
+    outline: none;
+}
 .corona-virus-information{
     height: fit-content;
-    width: 25%;
+    width: 35%;
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
@@ -176,14 +183,13 @@ color: #FFFFFF;
     background-color: var(--slide-up-bar-color);
     border-radius: 30px 30px 0 0;
     position: fixed;
-    z-index: 1;
     bottom: 0;
     left: 0;
     right: 0;
     background-image: linear-gradient(180deg, #5A5A5A 0%, #717171 71%, #7F7F7F 87%, #949494 100%);
     transform: translateY(95%);
     transition: all 1s;
-    z-index: 2;
+    z-index: 4;
 }
 .cart-overlay-open{
     transform: translateY(0%);
@@ -194,7 +200,7 @@ color: #FFFFFF;
     white-space: nowrap;
 font-size: 5vw;
 color: #FFFFFF;
-z-index: 4;
+z-index: 6;
 position: sticky;
 top: 1%;
 }
@@ -210,21 +216,22 @@ overflow-y: auto;
 }
 .cart-content-container{
     width: 60%;
-    height: 80%;
+    height: 600px;
     padding-top: 3em;
     overflow-x: scroll;
     bottom: -1em;
-    position: absolute;
+    position: relative;
     float: left;
-    z-index: 2;
+    z-index: 5;
 }
 .cart-content{
-    z-index: 3;
+    z-index: 6;
     background-image: linear-gradient(-48deg, #ABA8A8 0%, #898585 40%, #736F6F 100%);
 border: 1px solid #979797;
 border-radius: 30px;
 margin-top: 1em;
 margin-bottom: 1em;
+
 }
 .cart-content-container::-webkit-scrollbar{
     display: none;
@@ -281,8 +288,8 @@ color: #FFFFFF;
     position: absolute;
     white-space: nowrap;
     width: 100%;
-    height: fit-content;
-    z-index: 5;
+    height: 25%;
+    z-index: 7;
 }
 .cart-btn{
     border: none;
@@ -292,7 +299,6 @@ color: #FFFFFF;
     padding-top: 0.2em;
     margin: auto;
     background-color: transparent;
-    z-index:2;
     outline: none;
     transition: all 1s;
 }
@@ -318,6 +324,8 @@ color: #FFFFFF;
     display: grid;
     position: absolute;
     right: 0;
+    top: 0;
+    
 }
 .payment>div{
     margin: auto;
@@ -401,7 +409,7 @@ color: #9B9292;
 .img-container{
     position: relative;
     height: fit-content;
-    z-index: 0;
+    z-index: 1;
 
 }
 .img-container{
@@ -430,6 +438,7 @@ color: #9B9292;
     height: 100%;
     border: none;
     bottom: 0;
+    z-index: inherit;
 }
 .add-to-cart-btn img{
     width: 50%;
@@ -438,7 +447,7 @@ color: #9B9292;
 }
 .description{
     position: relative;
-    z-index:1;
+    z-index:2;
 }
 
 /* end of main */
