@@ -10,7 +10,7 @@
         "name" : "N95",
         "price": 10000,
         "category": "medical",
-        "picture" : "https://babyfood.com.vn/data/Upload/images/khau-trang-cho-be-bmc-nhat-ban-tui-mau-xanh-set-7.JPG",
+        "picture" : "http://cdn.shopify.com/s/files/1/2172/8265/products/bo-4-cai-khau-trang-3m-8210-n95-1467970614-4907442-848e42ff91f6881c9314b0e1f5814a17-zoom_1024x1024.jpg?v=1503295740",
         "id" : "0002"
     },
 
@@ -18,7 +18,7 @@
         "name" : "3M 9001",
         "price": 10000,
         "category": "medical",
-        "picture" : "https://babyfood.com.vn/data/Upload/images/khau-trang-cho-be-bmc-nhat-ban-tui-mau-xanh-set-7.JPG",
+        "picture" : "http://cf.shopee.vn/file/1d6dbb3d7ec114eeb8c2d9ed8e6c0306",
         "id" : "0003"
     },
 
@@ -26,7 +26,7 @@
         "name" : "Honeywell H901",
         "price": 10000,
         "category": "medical",
-        "picture" : "https://babyfood.com.vn/data/Upload/images/khau-trang-cho-be-bmc-nhat-ban-tui-mau-xanh-set-7.JPG",
+        "picture" : "http://honeywell-safety.vn/images/News/Honeywell-H901-H1009101V-eco3d-1.jpg",
         "id" : "0004"
     },
 
@@ -34,7 +34,7 @@
         "name" : "Uni-Charm 3D Mask",
         "price": 10000,
         "category": "medical",
-        "picture" : "https://babyfood.com.vn/data/Upload/images/khau-trang-cho-be-bmc-nhat-ban-tui-mau-xanh-set-7.JPG",
+        "picture" : "http://www.hangngoainhap.com.vn/images/201905/goods_img/2817-p2-1558436272.jpg",
         "id" : "0005"
     },
 
@@ -44,7 +44,7 @@
         "name" : "Khẩu trang vải VN",
         "price": 10000,
         "category": "cotton",
-        "picture" : "https://babyfood.com.vn/data/Upload/images/khau-trang-cho-be-bmc-nhat-ban-tui-mau-xanh-set-7.JPG",
+        "picture" : "http://i-shop.vnecdn.net/resize/560/560/images/2020/03/10/5e66f8362131a-dd.jpg",
         "id" : "0006"
     },
 
@@ -54,7 +54,7 @@
         "name" : "Ronal",
         "price": 10000,
         "category": "cotton",
-        "picture" : "https://babyfood.com.vn/data/Upload/images/khau-trang-cho-be-bmc-nhat-ban-tui-mau-xanh-set-7.JPG",
+        "picture" : "http://i-shop.vnecdn.net/resize/560/560/images/2020/03/15/5e6d16358fb27-khau-trang-khong-in.jpg",
         "id" : "0007"
     },
 
@@ -64,7 +64,7 @@
         "name" : "MV5-Binh chủng hóa học VN",
         "price": 10000,
         "category": "gases",
-        "picture" : "https://babyfood.com.vn/data/Upload/images/khau-trang-cho-be-bmc-nhat-ban-tui-mau-xanh-set-7.JPG",
+        "picture" : "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRt159KpIhhFjJBr7DVWMHbIIpN1qA0A0seGJPET9ttdiorUW4Y",
         "id" : "0008"
     },
 
@@ -74,7 +74,7 @@
         "name" : "3M 6200",
         "price": 10000,
         "category": "gases",
-        "picture" : "https://babyfood.com.vn/data/Upload/images/khau-trang-cho-be-bmc-nhat-ban-tui-mau-xanh-set-7.JPG",
+        "picture" : "http://product.hstatic.net/1000294073/product/6200-6003_1cae45823fdc46e29d094f4e0a6a7c87.jpg",
         "id" : "0009"
     },
 
@@ -84,7 +84,7 @@
         "name" : "Mặt nạ Liên Xô",
         "price": 10000,
         "category": "gases",
-        "picture" : "https://babyfood.com.vn/data/Upload/images/khau-trang-cho-be-bmc-nhat-ban-tui-mau-xanh-set-7.JPG",
+        "picture" : "http://vn-test-11.slatic.net/p/3/mat-na-phong-doc-lien-xo-9387-1311184-b28ce3542bdb5e0ab4b82b29388f4dc9-catalog.jpg_340x340q80.jpg_.webp",
         "id" : "0010"
     },
 
@@ -94,7 +94,7 @@
         "name" : "VIM mọi size",
         "price": 10000,
         "category": "sanitizer",
-        "picture" : "https://babyfood.com.vn/data/Upload/images/khau-trang-cho-be-bmc-nhat-ban-tui-mau-xanh-set-7.JPG",
+        "picture" : "https://cdn.vinid.net/cdn-cgi/image/fit=scale-down,w=820,quality=75,f=auto/https://cdn-vincart.vinid.net/vm/product/8934868141525/26690270986270.jpg",
         "id" : "0011"
     }
 ]
