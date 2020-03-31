@@ -105,7 +105,7 @@ class UI {
       tempTotal += item.price * item.amount;
       itemsTotal += item.amount;
     });
-    cartTotal.innerText ='Tổng số tiền:  ' + parseFloat(tempTotal.toFixed(2));
+    cartTotal.innerText ='Tổng số tiền:  ' + parseFloat(tempTotal.toFixed(2))+' VND';
     // cartItems.innerText= itemsTotal;
     // console.log(cartTotal, itemsTotal); //ddcmm lam lai cho nay di
   }
