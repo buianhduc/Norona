@@ -55,7 +55,7 @@ class UI {
       result = `
           <div class="item" data-id="${products.id}">
               <div class="img-container">
-                  <img src="Media/Bitmap.png" alt="" class="image">
+                  <img src="${products.picture}" alt="" class="image">
                   <button class="add-to-cart-btn" data-id="${products.id}"><img src="SVG images/add-to-cart.svg" alt="" ></button>
               </div>
               <div class="description">
@@ -166,7 +166,7 @@ class UI {
       cartContent.removeChild(cartContent.children[0]);
     }
     document.addEventListener('click', event=>{
-      console.log(event.target);
+      // console.log(event.target);
       if(event.target.classList.contains('remove-item')){
         // console.log('sdnjsfn');
         let remove_Item = event.target;
@@ -180,9 +180,9 @@ class UI {
         let addAmount = event.target;
         let id=addAmount.dataset.id;
         let tempItem =  cart.find(item => item.id===id);
-        console.log(tempItem.amount);
+        // console.log(tempItem.amount);
         tempItem.amount = tempItem.amount +1;
-        console.log(tempItem.amount)
+        // console.log(tempItem.amount)
         Storage.saveCart(cart);
         this.setCartValues(cart);
         addAmount.nextElementSibling.innerText = tempItem.amount;

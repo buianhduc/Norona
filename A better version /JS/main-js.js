@@ -1,7 +1,6 @@
 let check=false;
 window.swal = swal;
 function OpenInformationBoard(){
-    console.log('dasbdsbfhsd')
     if(check==false){
         document.getElementsByClassName('corona-information-btn')[0].style.transform = "rotate(180deg)";
         document.getElementsByClassName('corona-virus-information')[0].style.transform = "translateX(0)";
