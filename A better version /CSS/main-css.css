@@ -370,10 +370,14 @@ color: #FFFFFF;
     display: grid;
 }
 .open-statement{
-    margin: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom:auto;
+
 }
 .open-statement div{
-    text-align: center;
+    text-align: left;
+    font-size: 10vw;
 }
 .container-title{
     font-size: xx-large;
@@ -453,3 +457,14 @@ color: #9B9292;
 }
 
 /* end of main */
+.clear-cart{
+    width: 35%;
+    height: 3vh;
+    background-color: red;
+    color: white;
+    border-radius: 30px;
+}
+.cart-total{
+    font-size: 31px;
+    font-family: var(--defult-font);
+}

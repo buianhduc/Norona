@@ -1,4 +1,5 @@
-let check=false
+let check=false;
+window.swal = swal;
 function OpenInformationBoard(){
     console.log('dasbdsbfhsd')
     if(check==false){
