@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="78px" height="60px" viewBox="0 0 78 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 64 (93537) - https://sketch.com -->
+    <title>Icon</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Items" transform="translate(-216.000000, -12.000000)" fill="#7F7777" stroke="#000000">
+            <g id="NAVBAR" transform="translate(37.000000, 13.000000)">
+                <g id="Icon" transform="translate(179.000000, 0.000000)">
+                    <polygon id="Path-6" points="39 26 0 41.1351351 39 58 78 41.1351351"></polygon>
+                    <polygon id="Path-6" points="39 13 0 28.1351351 39 45 78 28.1351351"></polygon>
+                    <polygon id="Path-6" points="39 -5.1159077e-13 0 15.1351351 39 32 78 15.1351351"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

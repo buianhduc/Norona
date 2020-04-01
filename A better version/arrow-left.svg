@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="23px" viewBox="0 0 16 23" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 64 (93537) - https://sketch.com -->
+    <title>Path</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="1-Chosen-item" transform="translate(-1418.000000, -501.000000)" stroke="#979797">
+            <g id="CORONA-VIRUS-API" transform="translate(1414.000000, 144.000000)">
+                <path d="M391.5,0.5 L30,0.5 C21.8537999,0.5 14.4787999,3.80189997 9.14034995,9.14034995 C3.80189997,14.4787999 0.5,21.8537999 0.5,30 L0.5,688 C0.5,696.1462 3.80189997,703.5212 9.14034995,708.85965 C14.4787999,714.1981 21.8537999,717.5 30,717.5 L391.5,717.5 L391.5,0.5 Z" id="Rectangle" fill="#554E4E"></path>
+                <polyline id="Path" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" points="18 359 6 368.5 18 378"></polyline>
+            </g>
+        </g>
+    </g>
+</svg>
