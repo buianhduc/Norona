@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="62px" height="31px" viewBox="0 0 62 31" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 64 (93537) - https://sketch.com -->
+    <title>Group 3</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Items" transform="translate(-1251.000000, -44.000000)" stroke="#000000">
+            <g id="NAVBAR" transform="translate(37.000000, 13.000000)">
+                <g id="Log-out-Span" transform="translate(1133.000000, 31.000000)">
+                    <g id="Group-3" transform="translate(81.000000, 0.000000)">
+                        <rect id="Rectangle" fill="#7F7777" x="0.5" y="0.5" width="30" height="30"></rect>
+                        <g id="Group-2" transform="translate(16.315789, 1.631579)">
+                            <polyline id="Path-8" points="22.8421053 0 45.6842105 13.4261553 22.8421053 27.7368421"></polyline>
+                            <line x1="0" y1="13.4061404" x2="45.6842105" y2="13.4061404" id="Path-9"></line>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
