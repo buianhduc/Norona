@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="62px" height="62px" viewBox="0 0 62 62" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 64 (93537) - https://sketch.com -->
+    <title>Avatar</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Items" transform="translate(-1087.000000, -13.000000)" stroke="#000000">
+            <g id="NAVBAR" transform="translate(37.000000, 13.000000)">
+                <g id="Avatar" transform="translate(1050.000000, 0.000000)">
+                    <circle id="Oval" fill="#7F7777" cx="31" cy="31" r="30.5"></circle>
+                    <path d="M31.1743003,10 C36.9732902,10 41.6743003,14.7010101 41.6743003,20.5 C41.6743003,23.4888365 40.4255063,26.1860016 38.4212254,28.098188 C42.7999956,32.3976889 47.1245775,40.583977 51.3945151,52.6539595 L10,52.6539595 C14.6549172,40.4652947 19.2541101,32.2370753 23.7975787,27.9693014 C21.8692099,26.0681991 20.6743003,23.4236426 20.6743003,20.5 C20.6743003,14.7010101 25.3753104,10 31.1743003,10 Z" id="Path-7"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
